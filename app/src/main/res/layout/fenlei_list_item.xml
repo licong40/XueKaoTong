@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:http="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:minHeight="50dp"
+    >
+    <View
+        android:id="@+id/bar"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="#3b9fff"
+        android:visibility="gone"></View>
+    <TextView
+        android:id="@+id/big_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="一级建造师"
+        android:textColor="@drawable/item_color"/>
+</LinearLayout>

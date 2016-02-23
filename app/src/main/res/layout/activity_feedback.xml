@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zjrt.xuekaotong.activity.Feedback"
+    android:orientation="vertical"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#f1efef">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_left"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/collect_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="意见反馈"
+            android:textSize="20dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="54dp"
+       android:text="学考通虚心接受您的批评与意见，并努力为您改正～"
+       android:textSize="14dp"
+       android:textColor="#666"
+       android:layout_marginLeft="11dp"
+       android:layout_marginTop="11dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:background="#fff"
+            android:gravity="top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/500"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#f4f4f4"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="186****0010"
+        android:textSize="14dp"
+        android:textColor="#999"
+        android:background="#fff"
+        android:paddingLeft="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="发送"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+</LinearLayout>

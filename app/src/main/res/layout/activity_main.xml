@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+        <RadioButton
+            android:id="@+id/bt1"
+            style="@style/radio_button"
+            android:text="首页"
+            android:drawableTop="@drawable/bt1_selecter"
+            android:checked="true"
+            android:textColor="@drawable/color_radiobutton"/>
+        <RadioButton
+            android:id="@+id/bt2"
+            style="@style/radio_button"
+            android:text="分类"
+            android:drawableTop="@drawable/bt3_selecter"
+            android:textColor="@drawable/color_radiobutton"/>
+        <RadioButton
+            android:id="@+id/bt3"
+            style="@style/radio_button"
+            android:text="名师"
+            android:drawableTop="@drawable/bt2_selecter"
+            android:textColor="@drawable/color_radiobutton"/>
+
+        <RadioButton
+            android:id="@+id/bt4"
+            style="@style/radio_button"
+            android:text="视频"
+            android:drawableTop="@drawable/bt4_selecter"
+            android:textColor="@drawable/color_radiobutton"/>
+        <RadioButton
+            android:id="@+id/bt5"
+            style="@style/radio_button"
+            android:text="我的"
+            android:drawableTop="@drawable/bt5_selecter"
+            android:textColor="@drawable/color_radiobutton"/>
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radioGroup" >
+    </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line"
+            android:background="#BDBDBD"
+            android:layout_above="@+id/radioGroup"/>
+</RelativeLayout>
