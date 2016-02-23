@@ -156,7 +156,7 @@ public class VideoDetail extends AppCompatActivity implements View.OnClickListen
         });
         request.setTag(this);
         queue.add(request);
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent1 = new Intent();
@@ -174,7 +174,7 @@ public class VideoDetail extends AppCompatActivity implements View.OnClickListen
                     startActivityForResult(intent1, 0);
                 }
             }
-        });
+        });*/
         findViewById(R.id.down).setOnClickListener(this);
     }
 
